@@ -1,0 +1,14 @@
+/[Oo]bj
+/[Ll]ibrary
+/[Ll]ogs
+/[Tt]emp
+/[Uu]serSettings
+
+/.vs
+.vsconfig
+*.sln
+*.csproj
+
+/[Aa]ssets/_TerrainAutoUpgrade*
+/[Aa]ssets/StreamingAssets*
+/[Aa]ssets/External/Arcade Vehicle physics/Materials/Friction.physicMaterial*
