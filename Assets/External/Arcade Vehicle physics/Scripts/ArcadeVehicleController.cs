@@ -127,6 +127,8 @@ public class ArcadeVehicleController : MonoBehaviour {
 		radius = rb.GetComponent<SphereCollider>().radius;
 		if(movementMode == MovementMode.AngularVelocity)
 			Physics.defaultMaxAngularSpeed = 100;
+		// Create a copy at start, otherwise asset would be modified
+		frictionMaterial = Instantiate(frictionMaterial);
 	}
 
 	void FixedUpdate() {

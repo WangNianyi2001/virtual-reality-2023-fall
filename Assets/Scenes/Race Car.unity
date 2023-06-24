@@ -907,6 +907,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3360009843606734515, guid: b645066e3f4574e438eadecd9d295b19, type: 3}
+      propertyPath: frictionMaterial
+      value: 
+      objectReference: {fileID: 13400000, guid: ab961f85c6c3a33498ea2d42e79ad18e, type: 2}
+    - target: {fileID: 3360009843606734515, guid: b645066e3f4574e438eadecd9d295b19, type: 3}
       propertyPath: drivableSurface.m_Bits
       value: 2147483647
       objectReference: {fileID: 0}
