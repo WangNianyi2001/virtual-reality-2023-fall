@@ -1,9 +1,9 @@
 using UnityEngine;
-using UnityEngine.Device;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 namespace Game.Racecar {
+	[ExecuteInEditMode]
 	public class RaceCarManager : MonoBehaviour {
 		#region Serialized fields
 		[Header("Capture")]
@@ -35,6 +35,19 @@ namespace Game.Racecar {
 		}
 
 		#region Life cycle
+		void EditorUpdate() {
+			if(spawnPoint != null && vehicleController != null) {
+				vehicleController.transform.position = spawnPoint.position;
+			}
+		}
+
+		void Update() {
+			if(!Application.isPlaying) {
+				EditorUpdate();
+				return;
+			}
+		}
+
 		void FixedUpdate() {
 			// Capture
 			Vector3 playerPos = Capture.PlayerPos;
